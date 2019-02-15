@@ -153,20 +153,6 @@ public class StringArrayUtilsTest {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     @Test
     public void testContains() {
         String[] array = {"the", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"};
@@ -175,16 +161,6 @@ public class StringArrayUtilsTest {
             Assert.assertTrue(outcome);
         }
     }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -216,12 +192,6 @@ public class StringArrayUtilsTest {
 
 
 
-
-
-
-
-
-
     @Test
     public void testIsPalindromic1() {
         String[] array = {"a", "b", "c", "b", "a"};
@@ -245,12 +215,6 @@ public class StringArrayUtilsTest {
         boolean outcome = StringArrayUtils.isPalindromic(array);
         Assert.assertFalse(outcome);
     }
-
-
-
-
-
-
 
 
 
@@ -323,21 +287,13 @@ public class StringArrayUtilsTest {
 
 
 
-
-
-
-
-
-
-
-
-
     @Test
     public void testRemoveConsecutiveDuplicates1() {
         String[] array = {"aba", "aba", "baa", "bab", "bba", "bba", "bba", "bba", "bbb", "bbb"};
         String[] actual = StringArrayUtils.removeConsecutiveDuplicates(array);
         String[] expected = {"aba", "baa", "bab", "bba", "bbb"};
-        Assert.assertEquals(actual, expected);
+        //Assert.assertEquals(actual, expected);
+       Assert.assertEquals(actual,expected);
     }
 
 
@@ -358,12 +314,6 @@ public class StringArrayUtilsTest {
         String[] expected = {"aba", "baa", "bab", "bba", "zzz", "bba", "aba", "bbb"};
         Assert.assertEquals(actual, expected);
     }
-
-
-
-
-
-
 
 
 
